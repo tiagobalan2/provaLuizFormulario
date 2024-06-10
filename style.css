@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(15, 15, 110);
+    max-width: 200px;
+    margin: auto;
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Definir a largura do formulário para ocupar 90% da largura da tela */
+
+}
+
+label{
+    font-size: 2.0rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    font-size: 2.0rem;
+    width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+button{
+    font-size: 2.0rem;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        max-width: none; /* Remover a largura máxima do corpo para que o formulário ocupe toda a largura da tela */
+        justify-content: center;
+    }
+    
+    form {
+        width: 100%; /* Definir a largura do formulário para ocupar 90% da largura da tela */
+    }
+    
+    input {
+        width: 100%; /* Fazer os campos de entrada ocuparem toda a largura disponível */
+    }
+}
